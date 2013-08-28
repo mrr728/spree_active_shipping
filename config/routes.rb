@@ -1,4 +1,4 @@
-Spree::Core::Engine.routes.prepend do
+Spree::Core::Engine.routes.append do
   namespace :admin do
     resource :active_shipping_settings, :only => ['show', 'update', 'edit']
 
